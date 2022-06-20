@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap');
+
+
+.button-submit {
+    height: 5em;
+    width: 14.1em;
+    background: #FFCB47;
+    color: #ffffff;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1em;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+.button-submit:hover{
+    background: #f7b307;
+}
+
+.div-newsLetter {
+    position: relative;
+    display: flex;
+    width: 20em;
+    left: 20em;
+    align-items: flex-start;
+    margin-top: 5em;
+}
+
+.description {
+    position: absolute;
+    font-size: 1em;
+    text-align: justify;
+    top: 15.5em;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    opacity: 0.5;
+    color: #202020;
+    width: 28em;
+
+}
+
+.email-form {
+    position: absolute;
+    top: 22em;
+    border: none;
+    width: 35em;
+    box-shadow: 1em 1em 10em #dddddd;
+}
+
+.input-email {
+    padding: 1em;
+    width: 21.85em;
+    border: none;
+    position: relative;
+    left:1.5em;
+
+}
+
+.input-email:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.title-one {
+    position: absolute;
+    font-size: 1.2em;
+    top: 0.8em;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    opacity: 0.5;
+    color: #202020;
+
+
+}
+
+.title-two {
+    position: absolute;
+    top: 0.7em;
+    font-size: 5em;
+    margin: 0;
+    font-family: 'Elsie Swash Caps', cursive;
+
+
+
+}

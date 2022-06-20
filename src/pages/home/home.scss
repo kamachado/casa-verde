@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap');
+
+
+
+.div-home{
+    position: relative;
+    background: #f9f9f9
+}
+
+.image-home {
+    position: absolute;
+    left: 48em;
+    top: -5em;
+    height: 50em;
+
+
+}
+
+.container-list {
+    position: absolute;
+    left: 35em;
+    top: 52em;
+    width: 50em;
+    display: flex;
+    background: #ffffff;
+    box-shadow: 1em 1em 10em #dddddd; 
+}
+
+.image-list {
+    position: relative;
+    height: 20em;
+
+}
+
+.title-list1 {
+    position: absolute;
+    color: #202020;
+    opacity: 0.5;
+    font-family: 'Montserrat', sans-serif;
+    left:28em;
+    top:2em;
+    width: 30em;
+    height: 2em;
+    display: flex;
+}
+
+.title-list2 {
+    position: absolute;
+    left:14em;
+    top:2em;
+    font-size:2em ;
+    height: 2em;
+    width: 20em;
+    font-family: 'Elsie Swash Caps', cursive;
+    margin:0;
+    display: flex;
+
+}
+
+
+.home-list {
+    position: relative;
+    right: 1em;
+    top:9em;
+    width:100em;
+    height: 20em;
+    margin:0;
+}
+
+.icon-list {
+    position: relative;
+    height: 2em;
+
+}
+
+.item-list {
+    position: relative;
+    list-style-type: none;
+    color: #202020;
+    left:2.1em;
+    top:-1.8em;
+    opacity: 0.5;
+    font-family: 'Montserrat', sans-serif;
+}
