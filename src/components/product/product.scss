@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap');
+
+.product-div{
+    position:relative;
+    left:15em;
+    top:73em;
+    margin:1em;
+    width: 27.5em;
+    height: 15em;
+    box-shadow: 1em 1em 10em #dddddd; 
+}
+.product-name{
+    position: relative;
+    left:7em;
+    top:-1em;
+    font-family: 'Elsie Swash Caps', cursive;
+    font-size: 2em;
+    width: 7em;
+    text-align: center;
+}
+.product-value{
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.5;
+    position:relative;
+    left:17em;
+    top:-5em;
+}
+.product-image{
+    position: relative;
+    left:5em;
+    top:-10em
+
+}
+
+.button-product{
+    position:relative;
+    left:17em;
+    top:-5em;
+    background: #ffffff;
+    border: none;
+    color: #FFCB47;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.button-product:hover{
+    color:#cf990e
+}

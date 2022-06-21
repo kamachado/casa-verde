@@ -7,6 +7,7 @@ import Api from "../../api"
 import { useEffect, useState } from "react"
 import Product from "../../components/product"
 
+
 interface DataProduct {
     name: string,
     preco: number,
@@ -45,13 +46,11 @@ export default function Home() {
                     {listIdeas.map(item => <><img className="icon-list" src={iconList} /><li className="item-list">{item}</li></>)}
                 </ul>
             </div>
-            <h6>Conheça nossas</h6>
-            <h4>ofertas</h4>
-            <div>
+            <h6 className="ofer-title1">Conheça nossas</h6>
+            <h4 className="ofer-title2">ofertas</h4>
+            <div className="products-ofer">
             {listProduct?.map((item) => <Product  name={item.name} value={item.preco} img={item.img} />)}
             </div>
-            
-
         </section>
 
 
