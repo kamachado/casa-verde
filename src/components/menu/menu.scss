@@ -37,19 +37,21 @@
 }
 
 .navegation-item {
+    list-style:none;
+    margin:auto;
+    font-weight:400;
+}
+
+.navegation-item-link{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 0.5em;
     font-size: 1em;
     line-height: 1.8em;
     color: #202020;
-    list-style:none;
-    margin:auto;
-    font-weight:400;
+    text-decoration: none;;
 }
-
-.navegation-item:hover{
+.navegation-item-link:hover{
     cursor: pointer;
     color: #185804;
 }
-

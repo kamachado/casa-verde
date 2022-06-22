@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap');
+
+.div-howtomake {
+    position: absolute;
+    left: 10em;
+
+
+}
+
+.title-howtomake {
+    position: relative;
+    font-family: 'Elsie Swash Caps', cursive;
+    font-size: 3em;
+    opacity: 0.8;
+
+
+}
+
+.description-howtomake {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    left: 15em;
+    opacity: 0.5;
+    top: -1.5em
+}
+
+.list-steps {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 1em 1em 10em #dddddd; 
+    width: 20em;
+    height: 10em;
+    left:13em;
+    border-radius: 1em;
+
+}
+
+.step-howtomake {
+    position: relative;
+    list-style: none;
+
+}
+
+.image-howtomake {
+    position: absolute;
+    left: 40em;
+    height: 75em;
+}
+
+.icon-step {
+    position: relative;
+    left: -1.5em;
+    top: 1.2em
+}

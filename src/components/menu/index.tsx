@@ -2,23 +2,18 @@ import React from "react";
 import "./menu.scss";
 import logo from "../../assents/logo.png"
 import imgYellow from "../../assents/yellow.png"
+import { Link } from 'react-router-dom';
 
-const menuItems = [{
-    name: "Como fazer",
-    link: ""
-}, {
-    name: "Ofertas",
-    link: ""
-}, {
-    name: "Depoimentos",
-    link: ""
-}, {
-    name: "Videos",
-    link: ""
-}, {
-    name: "Meu carrinho",
-    link: ""
-}]
+const menuItems = [
+    {
+        name: "Home",
+        link: ""
+    },
+    {
+        name: "Como fazer",
+        link: "/howToMake"
+    }
+]
 
 export default function Menu(): JSX.Element {
 
@@ -29,8 +24,9 @@ export default function Menu(): JSX.Element {
             <ul className="navegation-menu">
                 {menuItems.map((item, i, array) => <React.Fragment key={i}>
                     {i === 0 ? null : <li style={{ listStyle: 'none' }}>/</li>}
-                    <li className="navegation-item">{item.name}</li>
-                </React.Fragment>)}
+                    <li className="navegation-item"><Link className="navegation-item-link" to={item.link}>
+                        {item.name}
+                    </Link></li></React.Fragment>)}
             </ul>
         </div>
     )

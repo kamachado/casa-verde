@@ -6,6 +6,7 @@ import imageList from "../../assents/image-myplant.png"
 import Api from "../../api"
 import { useEffect, useState } from "react"
 import Product from "../../components/product"
+import React from "react"
 
 
 interface DataProduct {
@@ -20,11 +21,11 @@ export default function Home() {
     const [listProduct, setListProduct] = useState<DataProduct[]>([]);
 
     function getListProduct(): void {
-         api.getList().then((json) => setListProduct(json));
-        
+        api.getList().then((json) => setListProduct(json));
+
     }
 
-    useEffect(getListProduct,[])
+    useEffect(getListProduct, [])
 
     const listIdeas = [
         "Escolha suas plantas",
@@ -32,7 +33,7 @@ export default function Home() {
         "Aguarde na sua casa"
     ];
     return (
-        
+
         <section>
             <div className="div-home" >
                 <NewsLetter />
@@ -43,13 +44,16 @@ export default function Home() {
                 <p className="title-list1">Como conseguir </p>
                 <h6 className="title-list2" >minha planta</h6>
                 <ul className="home-list">
-                    {listIdeas.map(item => <><img className="icon-list" src={iconList} /><li className="item-list">{item}</li></>)}
+                    {listIdeas.map((item, index) => <React.Fragment key={index} >
+                        <img className="icon-list" src={iconList} />
+                        <li className="item-list">{item}</li>
+                    </React.Fragment>)}
                 </ul>
             </div>
             <h6 className="ofer-title1">Conheça nossas</h6>
             <h4 className="ofer-title2">ofertas</h4>
             <div className="products-ofer">
-            {listProduct?.map((item) => <Product  name={item.name} value={item.preco} img={item.img} />)}
+                {listProduct?.map((item, index) => <Product key={index} name={item.name} value={item.preco} />)}
             </div>
         </section>
 

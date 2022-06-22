@@ -26,15 +26,16 @@
 }
 .product-image{
     position: relative;
-    left:5em;
-    top:-10em
+    left:0.5em;
+    top:-16.5em;
+    height: 15em;
 
 }
 
 .button-product{
     position:relative;
-    left:17em;
-    top:-5em;
+    left:3em;
+    top:-19em;
     background: #ffffff;
     border: none;
     color: #FFCB47;
@@ -44,4 +45,10 @@
 
 .button-product:hover{
     color:#cf990e
+}
+
+.icon-submit{
+    position: relative;
+    left:1em;
+    top:0.05em
 }
